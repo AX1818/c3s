@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "4.0.0-beta.2",
+    "bootstrap": "4.0.0-beta.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
-    "reactstrap": "next"
+    "reactstrap": "^5.0.0-alpha.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,8 +19,8 @@
     "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
-    "@storybook/react": "^3.3.3",
     "@storybook/addon-actions": "^3.3.3",
-    "@storybook/addon-links": "^3.3.3"
+    "@storybook/addon-links": "^3.3.3",
+    "@storybook/react": "^3.3.3"
   }
 }
