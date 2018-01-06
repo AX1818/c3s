@@ -21,6 +21,8 @@
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.3",
     "@storybook/addon-links": "^3.3.3",
-    "@storybook/react": "^3.3.3"
+    "@storybook/react": "^3.3.3",
+    "eslint": "^4.14.0",
+    "jshint": "^2.9.5"
   }
 }
