@@ -46,7 +46,7 @@ export default class TopNavBar extends React.Component {
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <NavLink href="/">Store</NavLink>
+                    <NavLink href="/store">Store</NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
