@@ -1,6 +1,12 @@
 import React from 'react';
 
-import PhotoThumbnail from '../../components/PhotoThumbnail';
+import PhotoThumbnail from '../../components/PhotoThumbnail/index';
+
+import styled from 'styled-components';
+
+const StoreContainer = styled.div`
+  height: 5em;
+`;
 
 export default class C3Store extends React.Component {
   
@@ -44,16 +50,16 @@ export default class C3Store extends React.Component {
 
   render() {
     return (
-      <div className="store-container">
+      <StoreContainer className="store-container">
         {
           this.photoThumbnails.map((photoThumbnail) => {
             return (
-              <PhotoThumbnail {...photoThumbnail} />
+              <PhotoThumbnail key={photoThumbnail.src} {...photoThumbnail} />
             );
           })
         }
   
-      </div>
+      </StoreContainer>
     );
   }
   

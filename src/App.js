@@ -10,6 +10,8 @@ import {
 
 import TopNavBar from './components/TopNavBar';
 
+import styled from 'styled-components';
+
 import {default as Home} from './views/Home';
 import {default as BulletinBoard} from './views/BulletinBoard';
 import {default as Activities} from './views/Activities';

@@ -1,7 +1,14 @@
 import React from 'react';
 
 import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+  CardTitle, CardSubtitle } from 'reactstrap';
+
+import { default as styled } from 'styled-components';
+
+const StyledImg = styled.img`
+  width: 10em;  
+  margin: auto;
+`;
 
 export default class PhotoThumbnail extends React.Component {
   constructor(props) {
@@ -11,7 +18,7 @@ export default class PhotoThumbnail extends React.Component {
   render() {
     return (
       <Card>
-        <CardImg top width="30%" height="30%" src={this.props.src} alt={this.props.altText} className="img-thumbnail"/>
+        <StyledImg src={this.props.src} alt={this.props.altText} className="img-thumbnail"/>
         <CardBody>
           <CardTitle>Card title</CardTitle>
           <CardSubtitle>Card subtitle</CardSubtitle>

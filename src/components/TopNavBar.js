@@ -27,33 +27,31 @@ export default class TopNavBar extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar color="faded" light expand="md">
-          <NavbarBrand href="/">Celia Cloud Clothes Store</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <UncontrolledDropdown>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu >
-                  <DropdownItem>
+      <Navbar color="faded" light expand="md" >
+        <NavbarBrand href="/">CCS</NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <UncontrolledDropdown>
+              <DropdownToggle nav caret>
+                Options
+              </DropdownToggle>
+              <DropdownMenu >
+                <DropdownItem>
                   <NavLink href="/bulletinBoard">Bulletin Board</NavLink>
-                  </DropdownItem>
-                  <DropdownItem>
+                </DropdownItem>
+                <DropdownItem>
                   <NavLink href="/activities">Activities</NavLink>
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    <NavLink href="/store">Store</NavLink>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  <NavLink href="/store">Store</NavLink>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+        </Collapse>
+      </Navbar>
     );
   }
 }

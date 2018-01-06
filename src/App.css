@@ -1,5 +1,12 @@
 .App {
+  position: relative;
   text-align: center;
+  /* width: 100%;
+  height: 100%; */
+
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .App-logo {
@@ -25,4 +32,13 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+.store-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  overflow: scroll;
 }
